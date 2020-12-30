@@ -4,6 +4,8 @@ import work from './work.png'
 import grass from './grass.png'
 import uncertainty from './uncertainty-in-games.jpg'
 
-export default {
+const images = {
     birth, home, work, grass, uncertainty
-}
+};
+
+export default images;

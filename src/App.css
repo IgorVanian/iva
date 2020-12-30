@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 980px;
   height: 500px;
   margin: 0 auto;
@@ -17,6 +18,7 @@
 
 .places {
   display: flex;
+  width: 100%;
   justify-content: space-evenly;
   margin-bottom: 15px;
 }
@@ -25,7 +27,7 @@
   height: 50px;
   width: 50px;
   padding: 15px;
-  background-color: #A89260;
+  background-color: #BCCFF5;
   border-radius: 100%;
 }
 
@@ -35,5 +37,14 @@
 }
 
 .place:hover {
-  background-color: #A89260;
+  background-color: #DEE9FF;
+}
+
+.footer {
+  margin: 0 auto;
+  color: #F5E3BC;
+}
+
+h1 {
+  color: #F5E3BC;
 }

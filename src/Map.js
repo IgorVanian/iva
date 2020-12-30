@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import L, { map } from 'leaflet'
+import L from 'leaflet'
 import './Map.css'
 
 const initMap = () => {
@@ -22,10 +22,14 @@ const Map = ({ places, onInit }) => {
         mapRef.current = initMap();
         mapRef.current.resetPan = () => mapRef.current.fitBounds(featureGroupRef?.current?.getBounds());
         onInit(mapRef.current);
+
+        return () => mapRef.current.remove();
     }, []);
 
     useEffect(() => {
         featureGroupRef.current = L.featureGroup().addTo(mapRef.current);
+
+        return () => featureGroupRef.current.remove();
     }, []);
     
     useEffect(() => {
@@ -33,7 +37,7 @@ const Map = ({ places, onInit }) => {
             L.marker(coordinates, { title: text }).addTo(featureGroupRef.current);
         });
         mapRef.current.fitBounds(featureGroupRef.current.getBounds())
-    }, [])
+    }, [places])
 
     return (
         <div id="map"></div> 
