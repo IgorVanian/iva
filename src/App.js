@@ -24,26 +24,28 @@ function App() {
       <div className="header">
         <NowReading />
       </div>
-      <div className="places">
-      {
-        places.map((p, i) => {
-          return (
-            <div 
-              key={"place-" + i} 
-              className="place"
-              onMouseEnter={() => setPlace(p)}
-              onMouseLeave={() => setPlace(null)}
-            >
-              <img src={assets[p.img]} alt={p.imgAlt} />
-            </div>
-          )
-        })
-      }
+      <div className="main">
+        <div className="places">
+        {
+          places.map((p, i) => {
+            return (
+              <div 
+                key={"place-" + i} 
+                className="place"
+                onMouseEnter={() => setPlace(p)}
+                onMouseLeave={() => setPlace(null)}
+              >
+                <img src={assets[p.img]} alt={p.imgAlt} />
+              </div>
+            )
+          })
+        }
+        </div>
+        <Map 
+          places={places}
+          onInit={setMap}
+        />
       </div>
-      <Map 
-        places={places}
-        onInit={setMap}
-      />
       <div>Icons made by <a href="https://www.flaticon.com/free-icon/computer_3749784?term=work&page=1&position=15&related_item_id=3749784" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
       <div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 

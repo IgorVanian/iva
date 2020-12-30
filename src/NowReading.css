@@ -2,10 +2,10 @@
   display: flex;
   padding: 15px;
   right: 0;
-  height: 100px;
-  width: 300px;
+  height: 150px;
+  width: 350px;
   margin-left: auto;
-  background-color: darkslategray;
+  background-color: #F5E3BC;
 }
 
 .now-reading img {
@@ -15,5 +15,5 @@
 }
 
 .now-reading span {
-  color: azure;
+  color: #282C34;
 }

@@ -4,8 +4,6 @@ import './Map.css'
 
 const initMap = () => {
     return L.map('map', {
-        center: [49.8419, 24.0315],
-        zoom: 16,
         layers: [
             L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
                 attribution:
