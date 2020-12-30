@@ -2,6 +2,19 @@ import { useEffect, useRef } from 'react'
 import L from 'leaflet'
 import './Map.css'
 import 'leaflet/dist/leaflet.css'
+/* 
+Mutate default marker icon
+Github issue: https://github.com/Leaflet/Leaflet/issues/4968 
+*/
+import markerIcon2X from 'leaflet/dist/images/marker-icon-2x.png'
+import markerIcon from 'leaflet/dist/images/marker-icon.png'
+import markerShadow from 'leaflet/dist/images/marker-shadow.png'
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon2X,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+});
 
 const initMap = () => {
     return L.map('map', {
