@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import L from 'leaflet'
 import './Map.css'
+import 'leaflet/dist/leaflet.css'
 
 const initMap = () => {
     return L.map('map', {
