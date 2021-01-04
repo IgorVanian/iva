@@ -1,4 +1,6 @@
 .App {
+  margin: 0 auto;
+  width: 980px;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -6,21 +8,27 @@
   background-color: #282C34;
 }
 
+.header {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 980px;
-  height: 500px;
-  margin: 0 auto;
+  height: 400px;
 }
 
 .places {
   display: flex;
   width: 100%;
+  flex: 0.5;
   justify-content: space-evenly;
-  margin-bottom: 15px;
+  align-items: center;
 }
 
 .place {
@@ -43,6 +51,29 @@
 .footer {
   margin: 0 auto;
   color: #F5E3BC;
+  width: 980px;
+}
+
+.footer-links {
+  font-size: 2em;
+}
+
+.footer-links-image {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 100%;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.footer-links img {
+  display:block;
+  margin:auto;
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {

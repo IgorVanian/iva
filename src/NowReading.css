@@ -1,11 +1,10 @@
 .now-reading {
   display: flex;
   padding: 15px;
-  right: 0;
   height: 150px;
   width: 350px;
   margin-left: auto;
-  background-color: #BCCFF5;
+  background-color: #745c79;
 }
 
 .now-reading img {
@@ -14,6 +13,12 @@
   margin-right: 15px;
 }
 
+.now-reading p {
+  color: #ffffff;
+}
+
 .now-reading span {
-  color: #282C34;
+  color: #ffffff;
+  font-size: 1.4em;
+  font-weight: 600;
 }
