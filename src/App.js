@@ -55,12 +55,17 @@ function App() {
               </div>
             </a>
           </p>
-          <div></div>
         </div>
         <p>
           Credits:
           Icons made by <a href="https://www.flaticon.com/free-icon/computer_3749784?term=work&page=1&position=15&related_item_id=3749784" title="monkik">monkik</a> & <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
         </p>
+        <div className="footer-signature">
+          <p>
+            Say <a href="mailto:hi@iva.dev">hi@iva.dev</a>
+          </p>
+          <p>With ❤️ by Igor Vanian</p>
+        </div>
       </div>
 
     </div>

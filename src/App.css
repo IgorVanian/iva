@@ -76,6 +76,16 @@
   height: auto;
 }
 
+.footer-signature {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-signature a:any-link {
+  text-decoration: none;
+  color: white;
+}
+
 h1 {
   color: #F5E3BC;
 }
