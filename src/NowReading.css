@@ -1,11 +1,11 @@
 .now-reading {
   display: flex;
   padding: 15px;
-  height: 150px;
-  width: 350px;
-  margin-left: auto;
+  height: 50px;
+  align-items: center;
   background-color: #745c79;
 }
+
 
 .now-reading img {
   max-width: 100%;
@@ -17,8 +17,18 @@
   color: #ffffff;
 }
 
-.now-reading span {
+.now-reading div {
   color: #ffffff;
-  font-size: 1.4em;
   font-weight: 600;
+}
+
+@media only screen and (min-width: 980px) {
+  .now-reading {
+    height: 150px;
+    width: 350px;
+    flex: 0.4;
+  }
+  .now-reading span {
+    font-size: 1.4em;
+  }
 }

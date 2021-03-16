@@ -6,10 +6,8 @@ const NowReading = () => {
         <div className="now-reading">
             <img src={assets.uncertainty} alt="Uncertainty in games, by Greg Costikyan" />
             <div>
-                <p>Now reading:</p>
-                <span>
-                    Uncertainty in games, by Greg Costikyan
-                </span>
+                Now reading: <br />
+                Uncertainty in games, by Greg Costikyan
             </div>
         </div>
     )

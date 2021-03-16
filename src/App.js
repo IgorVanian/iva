@@ -19,7 +19,9 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <h1>Hi :)</h1>
+        <div className="hi">
+          <h1>Hi :)</h1>
+        </div>
         <NowReading />
       </div>
       <div className="main">

@@ -1,10 +1,9 @@
 .App {
   margin: 0 auto;
-  width: 980px;
+  padding: 15px;
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
   background-color: #282C34;
 }
 
@@ -15,26 +14,27 @@
   margin-bottom: 50px;
 }
 
+.header .hi {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
 }
 
 .places {
   display: flex;
-  width: 100%;
-  flex: 0.5;
-  justify-content: space-evenly;
   align-items: center;
+  margin-top: 15px;
+  justify-content: space-evenly;
 }
 
 .place {
-  height: 50px;
-  width: 50px;
   padding: 15px;
+  height: 30px;
   background-color: #BCCFF5;
   border-radius: 100%;
 }
@@ -51,7 +51,6 @@
 .footer {
   margin: 0 auto;
   color: #F5E3BC;
-  width: 980px;
 }
 
 .footer-links {
@@ -88,4 +87,14 @@
 
 h1 {
   color: #F5E3BC;
+}
+
+@media only screen and (min-width: 980px) {
+  .App {
+    padding: 0;
+    width: 980px;
+  }
+  .place {
+    height: 60px;
+  }
 }
